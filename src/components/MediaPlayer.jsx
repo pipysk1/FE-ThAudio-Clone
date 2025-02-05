@@ -13,7 +13,7 @@ const getStorageKeys = (storeId) => ({
   isPlaying: `${STORAGE_KEY_PREFIX}${storeId}_isPlaying`,
 });
 
-const AudioControls = ({
+const  = ({
   isPlaying,
   onPlayPause,
   onNext,
@@ -155,7 +155,7 @@ function MediaPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
-  const [playbackSpeed, setPlaybackSpeed] = useState(1);
+  const [playbackSpeed, setPlaybackSpeed] = useState(2);
   const [isLoaded, setIsLoaded] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
   const audioRef = useRef(null);
@@ -404,7 +404,7 @@ function MediaPlayer() {
           </div>
         </div>
       </div>
-      <AudioControls
+      <
         isPlaying={isPlaying}
         onPlayPause={handlePlayPause}
         onNext={handleNext}
